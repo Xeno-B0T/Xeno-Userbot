@@ -34,8 +34,8 @@
 
 ------
 ## 𝚃𝚎𝚕𝚎𝚐𝚛𝚊𝚖 𝚂𝚞𝚙𝚙𝚘𝚛𝚝
-- [![Telegram Group](https://img.shields.io/badge/Telegram-Group-brightgreen)](https://t.me/Legend_Userbot)
-- [![Telegram Channel](https://img.shields.io/badge/Telegram-Channel-brightgreen)](https://t.me/Official_LegendBot)
+- [![Telegram Group](https://img.shields.io/badge/Telegram-Group-brightgreen)](https://t.me/XenoChats)
+- [![Telegram Channel](https://img.shields.io/badge/Telegram-Channel-brightgreen)](https://t.me/XenoSupport)
 
 ----------
 
