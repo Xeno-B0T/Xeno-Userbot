@@ -18,10 +18,10 @@ async def reply_id(event):
     return reply_to_id
 
 
-DEFAULTUSER = ALIVE_NAME or "✞︎t͛ẞ̸ 𝖑𝖊ɠêɳ̃dẞø✞︎ 🇮🇳"
+DEFAULTUSER = ALIVE_NAME or "Xeno UsᴇʀBᴏᴛ 🇮🇳"
 LEGEND_IMG = Config.ALIVE_PIC
-CUSTOM_ALIVE_TEXT = Config.ALIVE_MSG or "ℓєgєи∂ Choice 𝖑𝖊ɠêɳ̃dẞø✞︎"
-CUSTOM_YOUR_GROUP =Config.YOUR_GROUP or "@Legend_Userbot"
+CUSTOM_ALIVE_TEXT = Config.ALIVE_MSG or "Xeno UsᴇʀBᴏᴛ Is Alive"
+CUSTOM_YOUR_GROUP =Config.YOUR_GROUP or "@XenoChats"
 
 Legend = bot.uid
 
@@ -66,17 +66,17 @@ async def amireallyalive(alive):
         return
     reply_to_id = await reply_id(alive)
 
-    if  LEGEND_IMG:
-        LEGEND_caption = f"**{CUSTOM_ALIVE_TEXT}**\n"
+    if  XENO_IMG:
+        XENO_caption = f"**{CUSTOM_ALIVE_TEXT}**\n"
         
-        LEGEND_caption += f"~~~~~~~~~~~~~~~~~~~~~~~\n"
-        LEGEND_caption += f"        **♥ẞø† ẞ✞︎α†µѕ** \n"
-        LEGEND_caption += f"•⚜️• **Øաղ̃ҽ̈ɾ**          : {mention}\n\n"
-        LEGEND_caption += f"•📍• **𝖑𝖊ɠêɳ̃dẞø†**   : {LEGENDversion}\n"
-        LEGEND_caption += f"•📍• **†ҽ̀lҽ́ƭhøղ̃**     : `{version.__version__}`\n"
-        LEGEND_caption += f"•📍• **𝚄ρƭเɱε**         : `{uptime}`\n"
-        LEGEND_caption += f"•📍• **𝙶𝚛𝚘𝚞𝚙**           : [𝙶𝚛𝚘𝚞𝚙](t.me/Legend_Userbot)\n"
-        LEGEND_caption += f"•📍• **𝙼𝚢 𝙶𝚛𝚘𝚞𝚙**  : {CUSTOM_YOUR_GROUP}\n"   
+        XENO_caption += f"~~~~~~~~~~~~~~~~~~~~~~~\n"
+        XENO_caption += f"        **Xᴇɴᴏ Sᴛᴀᴛs** \n"
+        XENO_caption += f"•_• **Master**          : {mention}\n\n"
+        XENO_caption += f"•_• **XenoBᴏᴛ**   : {XENOversion}\n"
+        XENO_caption += f"•_• **Telethon**     : `{version.__version__}`\n"
+        XENO_caption += f"•_• **Uptime**         : `{uptime}`\n"
+        XENO_caption += f"•_• **Group**           : [𝙶𝚛𝚘𝚞𝚙](t.me/XenoChats)\n"
+        XENO_caption += f"•_• **My Group**  : {CUSTOM_YOUR_GROUP}\n"   
 
         await alive.client.send_file(
             alive.chat_id, LEGEND_IMG, caption=LEGEND_caption, reply_to=reply_to_id
@@ -89,7 +89,7 @@ async def amireallyalive(alive):
             f"~~~~~~~~~~~~~~~~~~~~~~~ \n"
             f"         𝕭𝖔𝖙 𝕾𝖙𝖆𝖙𝖚𝖘\n"
             f"•⚡• 𝕿єℓєτнοи    : `{version.__version__}`\n"
-            f"🇮🇳 ℓєgєи∂ϐοτ  : `{LEGENDversion}`\n"
+            f"🇮🇳 Xeno UsᴇʀBᴏᴛ  : `{XENOversion}`\n"
             f"🇮🇳 υρτιмє        : `{uptime}`\n"
             f"🔱 ɱαรƭεɾ        : {mention}\n"
             f"🔱 σωɳεɾ         : [ℓєgєи∂](t.me/Its_LegendBoy)\n"
@@ -97,32 +97,31 @@ async def amireallyalive(alive):
 
 
 msg = f"""
-**  ⚜️ Lêɠêɳ̃dẞø† ιѕ σиℓιиє ⚜️**
+**  |• Xeno UsᴇʀBᴏᴛ Is Aʟɪᴠᴇ •|**
 
 {Config.ALIVE_MSG}
 
-**    ♥️ ẞø✞︎ ẞ✞︎α✞︎µѕ ♥️**
-**•⚜️•Øաղ̃ҽ̈r     :** **{mention}**
-
-**•🌹•𝖑𝖊ɠêɳ̃dẞø✞︎ :** {LEGENDversion}
-**•🌹•✞︎ҽ̀lҽ́ƭhøղ  :** {version.__version__}
-**•🌹•Ãbûßê     :**  {abuse_m}
-**•🌹•ßudø      :**  {is_sudo}
-**•🌹•Bøt.      :** {Config.BOY_OR_GIRL}
+**    Xeno UsᴇʀBᴏᴛ Stats**
+**•_•Master    :** **{mention}**
+**•_•Xeno Bᴏᴛ  :** {XENOversion}
+**•_•Telethon  :** {version.__version__}
+**•_•Abuse     :**  {abuse_m}
+**•_•Sudo      :**  {is_sudo}
+**•_•Gender    :** {Config.BOY_OR_GIRL}
 """
 botname = Config.BOT_USERNAME
 
 @bot.on(admin_cmd(pattern="alive$"))
 @bot.on(admin_cmd(pattern="alive$", allow_sudo=True))
-async def legend_a(event):
+async def xeno_a(event):
     try:
-        legend = await bot.inline_query(botname, "alive")
-        await legend[0].click(event.chat_id)
-        if event.sender_id == Its_LegendBoy:
+        xeno = await bot.inline_query(botname, "alive")
+        await xeno[0].click(event.chat_id)
+        if event.sender_id == SempleBoy:
             await event.delete()
     except (noin, dedbot):
         await eor(event, msg)
 
 CmdHelp("alive").add_command(
-    'bot', None, 'υѕє αи∂ ѕєє'
+    'bot', None, 'Ｕｓｅ & Ｓｅｅ'
 ).add()
