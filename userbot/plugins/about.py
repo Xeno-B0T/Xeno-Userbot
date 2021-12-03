@@ -7,12 +7,12 @@ from userbot.cmdhelp import CmdHelp
 from userbot import ALIVE_NAME
 from telethon.tl.types import ChannelParticipantsAdmins
 # 🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "XENO"
 from userbot.Config import Config
 CUSTOM_ALIVE_TEXT = Config.ALIVE_MSG
-# Thanks to LEGEND BRO.. 
-# animation Idea by @Its_LegendBoy (op coder)
-# Kang with credits else gay...
+# Thanks to Simple Boy. 
+# Animation Idea by @SempleBoy.
+# Kang with credits else fucked.
 # alive.py for
 
 edit_time = 5
@@ -22,15 +22,15 @@ file2="https://telegra.ph/file/9fb5502699714b8eabca3.jpg"
 file3="https://telegra.ph/file/f04dcb487d52b97c36a54.jpg"
 file4="https://telegra.ph/file/bac71ea81bebea8332f86.jpg"
 file5="https://telegra.ph/file/56330a785e4f2a5919e1c.jpg"""" =======================CONSTANTS====================== """
-pm_caption = "     **🔥『Lêɠêɳ̃dẞø†』🔥**\n\n"
+pm_caption = "     ** Xeno UsᴇʀBᴏᴛ **\n\n"
 pm_caption += f"**{CUSTOM_ALIVE_TEXT}**\n\n"
-pm_caption += "༆༄🎀🌹Åbôût Mê \n\n"
-pm_caption += "💫💫**✞︎t͛ẞ̸ Lêɠêɳ̃dẞø†**💫💫 >>》 V•2.Ø\n"
-pm_caption += "😇😇**Lêɠêɳ̃d**😇😇   >>》 [Owner](https://t.me/Its_LegendBoy)\n"
-pm_caption += f"🔰🔰**Mâßtêř**🔰🔰  >>》 {legend_mention}\n"
-pm_caption += "❣❣ **𝖑𝖊ɠêɳ̃dẞø✞︎**❣❣ >>》 [𝕲𝖗ουρ](https://t.me/Legend_Userbot)\n\n"
-pm_caption += "🎊🎊 **Řepô**🎊🎊  >>》 [𝕽єρο](https://github.com/LEGEND-OS/LEGENDBOT)\n\n"
-pm_caption += "[....▄███▄███▄\n....█████████\n.......▀██❣🌹💫😇💫🌹❣███▀\n...............▀█▀\n](https://t.me/Its_LegendBoy)\n\n"
+pm_caption += "༆༄🎀🌹About Me \n\n"
+pm_caption += "**Xeno UsᴇʀBᴏᴛ**>>》 V•1.0\n"
+pm_caption += "**   Xeno **    >>》 [Owner](https://t.me/SempleBoy)\n"
+pm_caption += f"   **Master**  >>》 {legend_mention}\n"
+pm_caption += "  **Xeno Bot ** >>》 [Group](https://t.me/XenoChats)\n\n"
+pm_caption += " **Repository** >>》 [Repo](https://github.com/XENO-B0T/Xeno-Userbot)\n\n"
+pm_caption += "[....▄███▄███▄\n....█████████\n.......▀██❣🌹💫😇💫🌹❣███▀\n...............▀█▀\n](https://t.me/SempleBoy)\n\n"
 @borg.on(admin_cmd(pattern=r"abot"))
 @bot.on(sudo_cmd(pattern="abot$", allow_sudo=True))
 async def amireallyalive(yes):
