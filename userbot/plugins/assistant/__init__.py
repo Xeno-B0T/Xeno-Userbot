@@ -1,4 +1,4 @@
-# LEGENDBOT Assistant
+# XENOBOT Assistant
 from . import *
 from telethon import Button, custom
 
@@ -9,18 +9,18 @@ OWNER_NAME = ALIVE_NAME
 OWNER_ID = bot.uid
 
 
-LEGEND_USER = bot.me.first_name
-Its_LegendBoy = bot.uid
+XENO_USER = bot.me.first_name
+SempleBoy = bot.uid
 
-legend_mention = f"[{LEGEND_USER}](tg://user?id={Its_LegendBoy})"
-LEGEND_logo = "./userbot/resources/pics/-6163428037589314866_121.jpg"
-LEGEND_logo1 = "./userbot/resources/pics/-4965507108355287505_121.jpg"
-LEGEND_logo2 = "./userbot/resources/pics/-4965507108355287505_121.jpg"
-LEGEND_logo4 = "./userbot/resources/pics/-4965507108355287505_121.jpg"
-LEGEND_logo3 = "./userbot/resources/pics/-4965507108355287505_121.jpg"
-LEGENDversion = "𝚅2.𝙾"
+xeno_mention = f"[{XENO_USER}](tg://user?id={SempleBoy})"
+XENO_logo = "./userbot/resources/pics/-6163428037589314866_121.jpg"
+XENO_logo1 = "./userbot/resources/pics/-4965507108355287505_121.jpg"
+XENO_logo2 = "./userbot/resources/pics/-4965507108355287505_121.jpg"
+XENO_logo4 = "./userbot/resources/pics/-4965507108355287505_121.jpg"
+XENO_logo3 = "./userbot/resources/pics/-4965507108355287505_121.jpg"
+XENOversion = "𝚅1.𝙾"
 
-perf = "[ †hê Lêɠêɳ̃dẞø† ]"
+perf = "[ Xeno UsᴇʀBᴏᴛ ]"
 
 
 DEVLIST = [
