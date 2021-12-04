@@ -29,13 +29,13 @@ async def lg1(LEGENDevent):
         logo_ = await pic.download_media()
     text = LEGENDevent.pattern_match.group(1)
     if len(text) <= 8:
-        font_size_ = 150
+        font_size_ = 200
         strik = 10
     elif len(text) >= 9:
-        font_size_ = 50
+        font_size_ = 100
         strik = 5
     else:
-        font_size_ = 130
+        font_size_ = 150
         strik = 20
     if not text:
         await eod(event, "**Give some text to make a logo !!**")
@@ -58,7 +58,7 @@ async def lg1(LEGENDevent):
     draw.text(
         (w_, h_), text, font=font, fill="white", stroke_width=strik, stroke_fill="black"
     )
-    file_name = "LEGENDBOT.png"
+    file_name = "XenoBot.png"
     img.save(file_name, "png")
     await bot.send_file(
         LEGENDevent.chat_id,
