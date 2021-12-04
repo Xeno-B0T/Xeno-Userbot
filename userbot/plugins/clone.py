@@ -8,9 +8,9 @@ from userbot import ALIVE_NAME, BIO_MSG, CMD_HELP
 from LEGENDBOT.utils import admin_cmd
 from userbot.cmdhelp import CmdHelp
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND User"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Xeno User"
 
-DEFAULTUSERBIO = str(BIO_MSG) if BIO_MSG else "Legendary LEGENDBOY"
+DEFAULTUSERBIO = str(BIO_MSG) if BIO_MSG else "Demented XenoBot"
 BOTLOG_CHATID = Config.PRIVATE_GROUP_BOT_API_ID
 BOTLOG = True
 
@@ -55,12 +55,12 @@ async def _(event):
     )
     await event.delete()
     await borg.send_message(
-        event.chat_id, "**Hello Who are u??🙄🙄**", reply_to=reply_message
+        event.chat_id, "**Hello,how are you?**", reply_to=reply_message
     )
     if BOTLOG:
         await event.client.send_message(
             BOTLOG_CHATID,
-            f"#CLONED\nSuccesfulley cloned [{first_name}](tg://user?id={user_id })",
+            f"#CLONED\n[ Succesfully cloned ] [{first_name}](tg://user?id={user_id })",
         )
 
 
