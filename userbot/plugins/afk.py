@@ -1,5 +1,5 @@
-# by uniborg...Thanks @Its_LegendBoy
-# Now will be used in LEGENDBOT too....
+# by uniborg...Thanks @SempleBoy
+# Now will be used in XENOBOT too....
 import asyncio
 import datetime
 from datetime import datetime
@@ -7,13 +7,13 @@ from datetime import datetime
 from telethon import events
 from telethon.tl import functions, types
 from userbot import CMD_HELP
-from userbot import ALIVE_NAME, LEGENDversion
+from userbot import ALIVE_NAME, XENOversion
 from LEGENDBOT.utils import admin_cmd, edit_or_reply
 from userbot.cmdhelp import CmdHelp
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "ℓєgєи∂"
 
-LEGEND = bot.uid
+Xeno = bot.uid
 
 
 global USER_AFK  # pylint:disable=E0602
@@ -46,7 +46,7 @@ async def set_not_afk(event):
             event.chat_id,
             "🔥ι αм ϐαϲκ αℓινє !\n**и𝔬 𝔏οиgєя 𝔞ƒκ.**\n⏱️ `աαs αƒk fοя:``"
             + total_afk_time
-            + "`", file=LEGENDpic
+            + "`", file=XENOpic
         )
         try:
             await borg.send_message(  # pylint:disable=E0602
@@ -65,7 +65,7 @@ async def set_not_afk(event):
                 silent=True,
             )
         await asyncio.sleep(5)
-        await LEGENDBOT.delete()
+        await XENOBOT.delete()
         USER_AFK = {}  # pylint:disable=E0602
         afk_time = None  # pylint:disable=E0602
 
