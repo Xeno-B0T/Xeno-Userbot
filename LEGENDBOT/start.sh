@@ -16,8 +16,8 @@
 
 echo """
               
-Legendary LEGENDBOT!!
-@Legend_Userbot
+Demented XenoBot!!
+@XenoChats
 """
 
 python3 -m userbot
