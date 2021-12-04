@@ -14,8 +14,8 @@ legend = """
 
 """
 baap_bolte = """
-#Legendary LEGENDBOT          
-Made With Love By Team LEGENDBOT
+#Demented Xeno Userbot         
+Made with love by Xeno Officials
 """
                                                                                                             
 print("")
@@ -25,25 +25,25 @@ print(Style.BRIGHT + Fore.BLUE + logo)
 print(Style.RESET_ALL)
 print(Style.BRIGHT + Fore.CYAN + Back.BLUE + baap_bolte)
 print(Style.RESET_ALL)
-print("""Welcome To LEGENDBOT String Generator By @Its_LegendBoy""")
+print("""Welcome To Xeno String Session Generator By @SempleBoy""")
 print("""Kindly Enter Your Details To Continue ! """)
 
-API_KEY = input("API_KEY: ")
-API_HASH = input("API_HASH: ")
+apiKEY = input("API_KEY: ")
+apiHASH = input("API_HASH: ")
 
 while True:
     try:
         with TelegramClient(StringSession(), API_KEY, API_HASH) as client:
-            print("String Sent To Your Saved Message, Store It To A Safe Place!! ")
+            print("String Session Saved In Your Saved Messages ! ")
             print("")
             session = client.session.save()
             client.send_message(
                 "me",
-                f"Here is your TELEGRAM STRING SESSION\n(Tap to copy it)👇 \n\n `{session}` \n\n And Visit @Legend_Userbot For Any Help !",
+                f"Here is your TELEGRAM STRING SESSION\n(Tap to copy it)👇 \n\n `{session}` \n\n And Visit @XenoChats For Any Help !",
             )
 
             print(
-                "Thanks for Choosing LEGENDBOT Have A Good Time....Note That When You Terminate the Old Session ComeBack And Genrate A New String Session Old One Wont Work"
+                "Thanks for Choosing Xeno Userbot Have A Good Time....Note That When You Terminate the Old Session ComeBack And Genrate A New String Session Old One Wont Work"
             )
     except:
         print("")
