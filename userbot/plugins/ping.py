@@ -64,11 +64,11 @@ async def _(event):
     if event.fwd_from:
         return
     start = datetime.now()
-    event = await edit_or_reply(event, "**(❛ ᑭσɳց ❜!**")
+    event = await edit_or_reply(event, "**[ ⚫P0NG⚫ ]**")
     end = datetime.now()
     ms = (end - start).microseconds / 1000
     await event.edit(
-        f"**♦️𝙿𝚘𝚗𝚐!♦️**\n⚡️{ms}\n🔥𝙼𝚢 𝙾𝚠𝚗𝚎𝚛 [{DEFAULTUSER}](tg://user?id={legend})"
+        f"**♦️𝙿𝚘𝚗𝚐!♦️**\n⚡️{ms}\n🔥𝙼𝚢 𝙾𝚠𝚗𝚎𝚛 [{DEFAULTUSER}](tg://user?id={xeno})"
     )
 
 CmdHelp("ping").add_command(
